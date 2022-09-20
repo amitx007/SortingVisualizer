@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="sortstyle.css" />
+  </head>
+  <body>
+    <section class="navigtion">
+      <div class="hamburger">
+        <button
+          class="menu"
+          onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+          aria-label="Main Menu"
+        >
+          <svg width="100" height="100" viewBox="0 0 100 100">
+            <path
+              class="line line1"
+              d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
+            />
+            <path class="line line2" d="M 20,50 H 80" />
+            <path
+              class="line line3"
+              d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="up">
+        <a href="./index.html">
+          <svg
+            version="1.0"
+            xmlns="http://www.w3.org/2000/svg"
+            width="512.000000pt"
+            height="512.000000pt"
+            viewBox="0 0 512.000000 512.000000"
+            preserveAspectRatio="xMidYMid meet"
+            class="home"
+          >
+            <g
+              transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+              fill="#fff"
+              stroke="none"
+            >
+              <path
+                d="M2491 4819 c-19 -12 -579 -419 -1244 -906 -780 -572 -1216 -897
+  -1228 -917 -65 -106 61 -240 171 -183 14 7 549 397 1190 867 641 469 1172 854
+  1180 854 8 0 546 -389 1194 -864 1104 -808 1182 -863 1225 -867 108 -9 179
+  108 119 197 -14 21 -470 361 -1203 898 -649 475 -1207 882 -1239 903 -69 45
+  -113 50 -165 18z"
+                class="morph"
+              />
+              <path
+                d="M626 2770 c-65 -42 -61 36 -64 -1190 -2 -613 0 -1139 3 -1169 5 -41
+  14 -61 40 -90 l33 -36 711 -3 c786 -3 751 -5 791 61 19 31 20 55 20 709 0 463
+  4 694 11 730 44 208 249 347 455 309 164 -30 289 -149 323 -309 7 -36 11 -267
+  11 -730 0 -654 1 -678 20 -709 40 -66 5 -64 791 -61 l711 3 33 36 c26 29 35
+  49 40 90 3 30 5 556 3 1169 -3 1044 -4 1117 -21 1147 -48 89 -185 84 -232 -7
+  -13 -25 -15 -175 -15 -1105 l0 -1075 -529 0 -530 0 -4 628 c-4 700 -4 693 -75
+  831 -90 173 -252 303 -433 346 -85 20 -243 19 -325 -1 -179 -45 -353 -189
+  -433 -357 -65 -138 -64 -119 -68 -815 l-4 -632 -530 0 -529 0 0 1075 c0 1173
+  3 1107 -56 1154 -35 28 -108 28 -148 1z"
+                class="morph"
+              />
+            </g>
+          </svg>
+        </a>
+        <div class="head">
+          <div id="head1">
+            <span class="heading"> O(nlogN)</span>
+            <span class="comp">complexity </span>
+          </div>
+          <div class="content">
+            <ul>
+              <li><a href="Sortx.html">Merge Sort</a></li>
+              <li><a href="Sortx.html">Heap Sort</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="head">
+          <div id="head2">
+            <span class="heading"> O(n^2)</span>
+            <span class="comp">complexity </span>
+          </div>
+          <div class="content">
+            <ul>
+              <li><a href="Sortx.html">Bubble sort</a></li>
+              <li><a href="Sortx.html">Insertion Sort</a></li>
+              <li><a href="Sortx.html">Selection Sort</a></li>
+              <li><a href="Sortx.html">Quick Sort</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="sortHeading">
+      <div class="head">
+        <h1 id="headx">Merge Sort</h1>
+      </div>
+      <div class="visualizer">
+        <div class="control">
+          <div class="ranges">
+            <div class="elementSize">
+              <label for="size">Size: <span>123</span></label>
+              <input type="range" class="istyle" id="size" min="10" max="100" />
+            </div>
+            <div class="speed">
+              <label for="speed">Delay: <span>123</span></label>
+              <!-- <input type="range" class="istyle" id="speed" min="1" max="10" /> -->
+              <input type="range" class="istyle" id="speed" min="1" max="10" />
+            </div>
+          </div>
+          <div class="controls">
+            <button class="btn-30">
+              <span class="text-container">
+                <span class="text" id="start">Start</span>
+              </span>
+            </button>
+            <button class="btn-30">
+              <span class="text-container">
+                <span class="text" id="random">Random</span>
+              </span>
+            </button>
+            <!-- <button >Start</button> -->
+            <!-- <button id="random">Random</button> -->
+          </div>
+        </div>
+        <div class="elements"></div>
+      </div>
+    </div>
+
+    <div class="about">
+      <h1>Description</h1>
+      <p>
+        Bubble sort is a quadratic sorting algorithm that works by repeatedly
+        swapping the adjacent elements if they are in the wrong order. <br />
+        <br />
+        As the name suggest (Bubble sort) like the Bubble which are generally
+        lighter in weight goes up like that the element of lighter (less
+        magnitude) goes to the start and the heavier ones (higher magnitude)
+        goes to the end. <br />
+        <br />
+        Its a simple algorithm to implement but quite not efficient to implement
+        for larger data set as its worst case and average case is quadratic in
+        nature.
+      </p>
+    </div>
+    <div class="extras">
+      <div class="complexityTable">
+        <table>
+          <tr class="timeComplexity">
+            <th>Time complexity</th>
+            <td>
+              <table>
+                <tr class="worst">
+                  <th>Worst Case:</th>
+                  <td>O(N<sup>2</sup>)</td>
+                </tr>
+                <tr class="average">
+                  <th>Average Case:</th>
+                  <td>O(N<sup>2</sup>)</td>
+                </tr>
+                <tr class="best">
+                  <th>Best Case:</th>
+                  <td>O(N)</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr class="spaceComplexity">
+            <th>Space complexity</th>
+            <td>O(1)</td>
+          </tr>
+        </table>
+      </div>
+      <div class="code">
+        <div id="code"></div>
+        <div class="buttons">
+          <div class="java">
+            <img src="./assets/java.png" alt="java" data-lang="java" />
+          </div>
+          <div class="js">
+            <img
+              src="./assets/javascript.png"
+              alt="javascript"
+              id="js"
+              data-lang="javascript"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
+    <script src="./app.js"></script>
+    <script src="./sort.js"></script>
+    <script src="./sortingAlgorithms/bubbleSort.js"></script>
+    <script src="./sortingAlgorithms/selectionSort.js"></script>
+    <script src="./sortingAlgorithms/insertionSort.js"></script>
+    <script src="./sortingAlgorithms/quickSort.js"></script>
+    <script src="./sortingAlgorithms/mergeSort.js"></script>
+    <script src="./sortingAlgorithms/heapSort.js"></script>
+  </body>
+</html>

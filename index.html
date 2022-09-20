@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="navigtion">
+      <div class="hamburger">
+        <button
+          class="menu"
+          onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+          aria-label="Main Menu"
+        >
+          <svg width="100" height="100" viewBox="0 0 100 100">
+            <path
+              class="line line1"
+              d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
+            />
+            <path class="line line2" d="M 20,50 H 80" />
+            <path
+              class="line line3"
+              d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="up">
+        <div class="head">
+          <div id="head1">
+            <span class="heading"> O(nlogN)</span>
+            <span class="comp">complexity </span>
+          </div>
+          <div class="content">
+            <ul>
+              <li><a href="Sortx.html">Merge Sort</a></li>
+
+              <li><a href="Sortx.html">Heap Sort</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="head">
+          <div id="head2">
+            <span class="heading"> O(n^2)</span>
+            <span class="comp">complexity </span>
+          </div>
+          <div class="content">
+            <ul>
+              <li><a href="Sortx.html">Bubble sort</a></li>
+              <li><a href="Sortx.html">Insertion Sort</a></li>
+              <li><a href="Sortx.html">Selection Sort</a></li>
+              <li><a href="Sortx.html">Quick Sort</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="sortingHeading">
+      <div class="heading">
+        <h1>jsjhusg</h1>
+        <h1>cjsdhcudihc</h1>
+      </div>
+      <div class="lineDiv">
+
+      </div>
+    </div>
+    <div class="aboutSort">
+      <h1>Sorting Algorithm</h1>
+      <p>
+        Sorting algorithm are basically used to sort a data according to a
+        specific order e.g. like in numerical order (ascending or descending
+        order ) or lexicographical order. <br />
+        <br />
+        Efficient sorting is important for optimizing the efficiency of oher
+        algorithms.This opeartion is one of the most important and widespread in
+        computer science . <br />
+        <br />
+        There are currently hundreds of different sorting algorithms which have
+        their own advantages . All these algorithms are basically divided on
+        basis of 2 factors and they are :<br />
+        <br />
+        1. Space complexity <br />2. Time complexity <br /><br />
+        These complexity are represented with the help of asymptotic notation .
+        There are basically 5 asymptotic notations <br /><br />
+        1.BIG-OH NOTATION (O)<br />
+        2. BIG-OMEGA NOTATION (Ω) <br />3. THEATA NOTATION (Θ) <br />4.
+        LITTLE-OH NOTATION (o)<br />
+        5. LITTLE-OMEGA NOTATION (ω) <br /><br />
+        We mostly use first 3 notations. <br /><br />
+        Most of the sorting algorithm falls into either into <br /><br />
+        1: Logarithmic <br />
+        Here the complexity of the algorithm is O(n log n) for example like
+        Merge sort , Heap sort, Shell sort and many more.
+        <br />
+        <br />
+        2. Quadratic <br />
+        Here the complexity of the algorithm is O(n<sup>2</sup>) for example
+        like Bubble sort, Selection Sort , Insertion sort ,Quick sort and their
+        are many more.
+        <br /><br />
+      </p>
+    </div>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+  <script src="./app.js"></script>
+</html>

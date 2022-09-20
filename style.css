@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Bebas+Neue&family=Questrial&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Manrope", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: url("./assets/milad-fakurian-iLHDO19h0ng-unsplash.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden !important;
+  overflow: overlay;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hamburger {
+  position: fixed;
+  left: 2rem;
+  z-index: 30;
+}
+.menu {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  padding: 0;
+  width: 3rem;
+  z-index: 10;
+}
+.line {
+  fill: none;
+  stroke: white;
+  stroke-width: 6;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 6;
+}
+.line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.opened .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+.opened .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 6;
+}
+.opened .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+.up,
+.right {
+  position: fixed;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  z-index: 8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+}
+.up {
+  left: 0;
+  top: -100%;
+  background-color: rgba(152, 152, 152, 0.316);
+}
+.right {
+  right: -100%;
+
+  background-color: rgba(152, 152, 152, 0.316);
+}
+.head {
+  margin-left: -15%;
+  height: 60%;
+  width: 70%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#head1,
+#head2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.heading,
+.comp {
+  color: white;
+  display: block;
+  font-size: 2.3rem;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  font-weight: 900;
+  font-family: "Archivo", sans-serif;
+}
+.lineDiv {
+  width: 5px;
+  background: linear-gradient(#7f7fd5, #86a8e7, #91eae4);
+  height: 40%;
+}
+
+.content {
+  color: white;
+}
+.content > ul > li {
+  font-family: "Bebas Neue", cursive;
+  list-style: none;
+  margin: 5px;
+  font-size: 2rem;
+  letter-spacing: 1.5px;
+  text-transform: capitalize;
+  width: fit-content;
+  position: relative;
+  cursor: pointer;
+}
+.content > ul > li > a {
+  color: white;
+  text-decoration: none;
+}
+.right > .head > .content {
+  margin-top: 5rem;
+}
+.content > ul > li::after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 5px;
+  background-color: white;
+  transition: width 0.5s ease-in-out;
+}
+.content > ul > li:hover::after {
+  width: 100%;
+}
+
+/* heading  */
+
+.sortingHeading {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: end;
+  color: white;
+  padding: 10rem;
+}
+.sortingHeading > .heading {
+  width: 100%;
+  margin-right: 5px;
+}
+.sortingHeading > .heading > h1 {
+  font-family: "Archivo", sans-serif;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+}
+
+@media screen and (max-width: 700px) {
+  .sortingHeading {
+    padding: 0;
+    width: 90%;
+  }
+  .lineDiv{
+    height: 15%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #head1, #head2 {
+    top: 90px;
+}
+.right>.head>.content{
+  margin-top: 8rem;
+}
+  .heading,.comp{
+    font-size: 1.5rem;
+  }
+  .content> ul> li{
+    font-size: 1.2rem;
+  }
+}
+
+/* about sort */
+.aboutSort {
+  width: 80%;
+  color: white;
+  backdrop-filter: blur(3px);
+  background-color: rgba(80, 80, 80, 0.332);
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+}
+.aboutSort > h1 {
+  font-family: "Questrial", sans-serif;
+  font-size: 3rem;
+  margin: 1rem 0;
+  letter-spacing: 2.2px;
+}
+.aboutSort > p {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+@media screen and (max-width: 1000px){
+  .hamburger{
+    left: 0.2rem;
+  }
+  .aboutSort{
+    width: 90%;
+  }
+}
+
+/* scroll-bar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background: linear-gradient(#12c2e9, #c471ed, #f64f59);
+}
