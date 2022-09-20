@@ -326,6 +326,7 @@ td {
 #code > pre > code {
   font-family: "JetBrains Mono", monospace;
 }
+
 .buttons {
   position: sticky;
   top: 25%;
@@ -367,6 +368,21 @@ div > img {
   }
   #code{
     padding: 0.3rem;
+     width: 85%;
+    overflow-x: auto;
+  }
+   #headx{
+    font-size: 1.8rem;
+  }
+  .buttons{
+    width: 15%;
+  }
+  .java,.js{
+     height: 3.5rem;
+     border-radius: 0 1.2rem 1.2rem 0;
+  }
+  .java>img,.js>img{
+    height: 2.8rem;
   }
 }
 

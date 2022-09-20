@@ -233,6 +233,13 @@ body {
   .aboutSort{
     width: 90%;
   }
+  .aboutSort>h1{
+    font-size: 2rem;
+  }
+  .aboutSort>p{
+    font-size: 1rem;
+    text-align: left;
+  }
 }
 
 /* scroll-bar */
